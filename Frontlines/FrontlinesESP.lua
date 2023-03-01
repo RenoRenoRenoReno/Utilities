@@ -97,7 +97,7 @@ local EnableEsp = MainTab:CreateToggle({
       	 end
 })
 
-local RemoveARMS = Tab:CreateButton({
+local RemoveARMS = MainTab:CreateButton({
    Name = "RemoveARM",
    Callback = function()
    	  local Character = game.Players.LocalPlayer.Character
