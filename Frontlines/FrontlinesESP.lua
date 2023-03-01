@@ -98,12 +98,12 @@ local EnableEsp = MainTab:CreateToggle({
 })
 
 local RemoveARMS = MainTab:CreateButton({
-   Name = "DisableCamShake",
+   Name = "Disable GrenadeShake",
    Callback = function()
        game.Players.LocalPlayer.PlayerScripts.frontlines_client.utils.camshake:Destroy()
        Rayfield:Notify({
 	    Title = "Disabled!",
-            Content = "Camshake has been disabled.",
+            Content = "Grenade Shake has been disabled.",
             Duration = 6.5,
             Image = 4483362458,
             Actions = { -- Notification Buttons
