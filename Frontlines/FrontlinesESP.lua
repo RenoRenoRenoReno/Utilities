@@ -98,16 +98,22 @@ local EnableEsp = MainTab:CreateToggle({
 })
 
 local RemoveARMS = MainTab:CreateButton({
-   Name = "RemoveARMS",
+   Name = "DisableCamShake",
    Callback = function()
-    for _,Character in pairs(game.workspace:GetChildren()) do
-   	     if (Character:FindFirstChild('TPVBodyVanillaArmL')) then
-  	  Character.TPVBodyVanillaArmL:Destroy()
-   	  Character.TPVBodyVanillaArmR:Destroy()
-   	  Character.TPVBodyVanillaGloveL:Destroy()
-   	  Character.TPVBodyVanillaGloveR:Destroy()
-	     end	
-	  end
-
+       game.Players.LocalPlayer.PlayerScripts.frontlines_client.utils.camshake:Destroy()
+       Rayfield:Notify({
+	    Title = "Disabled!",
+            Content = "Camshake has been disabled.",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+              Ignore = {
+                Name = "Okay!",
+                Callback = function()
+                  print("The user tapped Okay!")
+                end
+   },
+},			
+       })
    end,
 })
