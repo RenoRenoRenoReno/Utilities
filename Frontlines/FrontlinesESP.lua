@@ -4,10 +4,6 @@ if (game.PlaceId == not 5938036553) then
 	game.Players.LocalPlayer:Kick("This script only supports Frontlines")
 end
 
-_G.CheckTeams = true
-_G.TeamColor = Color3.fromRGB(111, 0, 255)
-_G.EnemyColor = Color3.fromRGB(255,0,0)
-
 --< Ui Libary >--
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
