@@ -17,19 +17,19 @@ local Window = Rayfield:CreateWindow({
       FileName = "Big Hub"
    },
    Discord = {
-      Enabled = false,
-      Invite = "SIRIUS", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      Enabled = true,
+      Invite = "TreTuQvdNP", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Sirius Hub",
+      Title = "Key",
       Subtitle = "Key System",
-      Note = "Join the discord (discord.gg/sirius)",
+      Note = "In order to get the key you'll need to join the server: TreTuQvdNP, This is completely free.",
       FileName = "SiriusKey",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "Hello"
+      Key = "frontlineskeyhub"
    }
 })
 
