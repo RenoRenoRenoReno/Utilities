@@ -250,3 +250,5 @@ local RemoveARMS = MainTab:CreateButton({
 		})
 	end,
 })
+
+SiriusSense.Load()
